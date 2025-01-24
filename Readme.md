@@ -40,10 +40,12 @@ senpaiii10@Debian~ $ bash start
 ```
 
 ## Credits 💖
-- ZeroTwo Bot
-- Man
-- pyrogram
-- xyz ⚡
+- @Zeroo_Twoo_Bot
+- Pyrogram
+- Telethon
+- Python Telegram Bot
+
+
 
 ## Support / Channel
 

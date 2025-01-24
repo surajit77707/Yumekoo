@@ -41,7 +41,7 @@ async def hyperlink_command(client: Client, message: Message):
         await message.reply_text("𝖨𝗇𝗏𝖺𝗅𝗂𝖽 𝖿𝗈𝗋𝗆𝖺𝗍! 𝖴𝗌𝖾: /𝗁𝗒𝗉𝖾𝗋𝗅𝗂𝗇𝗄 <𝗍𝖾𝗑𝗍> <𝗅𝗂𝗇𝗄>")
 
 @app.on_message(filters.command("joke" , config.COMMAND_PREFIXES))
-@app.on_message(filters.regex(r"^(?i)Frieren Ek Joke Sunao$"))
+@app.on_message(filters.regex(r"^(?i)Yumeko Ek Joke Sunao$"))
 @error
 @save
 async def joke(client: Client, message: Message):
@@ -69,14 +69,14 @@ async def roll(client: Client, message: Message):
     await message.reply_text(random.randint(1, 6))
 
 @app.on_message(filters.command("flirt" , config.COMMAND_PREFIXES))
-@app.on_message(filters.regex(r"^(?i)Frieren flirt$"))
+@app.on_message(filters.regex(r"^(?i)Yumeko flirt$"))
 @error
 @save
 async def flirt(client: Client, message: Message):
     await message.reply_text(random.choice(FLIRT_STRINGS))
 
 @app.on_message(filters.command("toss" , config.COMMAND_PREFIXES))
-@app.on_message(filters.regex(r"^(?i)Frieren toss$"))
+@app.on_message(filters.regex(r"^(?i)Yumeko toss$"))
 @error
 @save
 async def toss(client: Client, message: Message):
@@ -105,7 +105,7 @@ async def rlg(client: Client, message: Message):
     await message.reply_text(face)
 
 @app.on_message(filters.command("decide" , config.COMMAND_PREFIXES))
-@app.on_message(filters.regex(r"^(?i)Frieren decide$"))
+@app.on_message(filters.regex(r"^(?i)Yumeko decide$"))
 @error
 @save
 async def decide(client: Client, message: Message):

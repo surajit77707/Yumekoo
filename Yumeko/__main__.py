@@ -276,11 +276,11 @@ if __name__ == "__main__":
             await setup_indexes()
             if await is_database_empty():
                 log.warning("Database is empty. Attempting to restore from the last backup...")
-                try :
-                    restore_status = await restore_from_last_backup()
-                    log.info(restore_status)
-                except:
-                    pass
+                # try :
+                #     restore_status = await restore_from_last_backup()
+                #     log.info(restore_status)
+                # except:
+                #     pass
             else:
                 log.info("Database is not empty. Proceeding with startup.")
             scheduler.start()

@@ -9,7 +9,7 @@ from Yumeko.decorator.errors import error
 from Yumeko.decorator.save import save
 
 @app.on_message(filters.command("update", prefixes=config.COMMAND_PREFIXES) & filters.user(config.OWNER_ID))
-@app.on_message(filters.regex(r"^(?i)Frieren Update$") & filters.user(config.OWNER_ID))
+@app.on_message(filters.regex(r"^(?i)Yumeko Update$") & filters.user(config.OWNER_ID))
 @error
 @save
 async def git_pull_command(client, message):

@@ -4,8 +4,8 @@ from telethon import events
 from telethon.errors import UserNotParticipantError
 from telethon.tl.functions.channels import GetParticipantRequest
 from telethon.tl.types import ChannelParticipantAdmin, ChannelParticipantCreator
-from Yumeko import telebot
-from Yumeko.vars import emojis
+from alicex import telebot
+from alicex.vars import emojis
 
 spam_chats = []
 
